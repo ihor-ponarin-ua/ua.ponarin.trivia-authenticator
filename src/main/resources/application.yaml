@@ -1,0 +1,3 @@
+jwt:
+  secret: 5U2JxRTW49$^)PjV7C*5bsfNqPIIy7Rd5+4E2qgbYN%8qjy#zN
+  expirationTime: 1 # should be in minutes
