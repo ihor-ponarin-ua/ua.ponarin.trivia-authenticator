@@ -1,3 +1,7 @@
+server:
+  port: 8082
 jwt:
   secret: 5U2JxRTW49$^)PjV7C*5bsfNqPIIy7Rd5+4E2qgbYN%8qjy#zN
   expirationTime: 120 # should be in minutes
+api:
+  users: http://localhost:8081
