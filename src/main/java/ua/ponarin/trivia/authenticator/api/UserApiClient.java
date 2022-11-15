@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import ua.ponarin.trivia.authenticator.model.User;
 
 import javax.validation.constraints.NotBlank;
+import java.util.List;
 
 @FeignClient(name = "userApiClient", url = "${api.users}")
 @Validated
 public interface UserApiClient {
-    @GetMapping("/users/search/findUserByLoginAndPassword")
-    User findByLoginAndPassword(
+    @GetMapping("/v1/users")
+    List<User> findByLoginAndPassword(
             @NotBlank @RequestParam String login,
             @NotBlank @RequestParam String password
     );
